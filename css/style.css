@@ -1,39 +1,145 @@
-/* -------- cores & dimensões -------- */
-:root{
-    --primary:#0d6efd; --dark:#212529; --light:#f8f9fa;
-    --header-h:60px; --footer-h:50px; --sidebar-w:320px;
+/* Cores e dimensões principais */
+:root {
+  --primary: #0d6efd;
+  --dark: #212529;
+  --light: #f8f9fa;
+  --header-h: 60px;
+  --footer-h: 50px;
+  --sidebar-w: 320px;
+}
+
+/* Reset básico */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e9ecef;
+  padding-top: var(--header-h);
+  padding-bottom: var(--footer-h);
+  color: var(--dark);
+}
+
+/* Barra superior */
+.navbar {
+  height: var(--header-h);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+/* Menu lateral */
+.offcanvas {
+  width: var(--sidebar-w) !important;
+}
+
+.nav-sidebar {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.nav-sidebar .main-topic {
+  font-weight: 600;
+  color: #343a40;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 20px;
+}
+
+.nav-sidebar .main-topic .fa-chevron-down {
+  transition: transform 0.3s ease;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.nav-sidebar .main-topic[aria-expanded="true"] .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.nav-submenu {
+  padding-left: 15px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav-submenu .nav-link {
+  font-size: 0.9rem;
+  padding: 10px 20px 10px 30px;
+  color: #495057;
+  border-left: 4px solid transparent;
+}
+
+.nav-submenu .nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.nav-submenu .nav-link.active {
+  font-weight: bold;
+  color: var(--primary);
+  background-color: #e9ecef;
+  border-left-color: var(--primary);
+}
+
+/* Área de conteúdo principal */
+.main-content {
+  min-height: calc(100vh - var(--header-h) - var(--footer-h));
+  padding: 20px;
+}
+
+#content-area {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .075);
+  margin: 0 auto;
+  max-width: 1100px;
+  min-height: 500px;
+}
+
+.content-page h1, .content-page h2 {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.content-page h1 {
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.content-page h2 {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--primary);
+  padding-left: 15px;
+}
+
+/* Botão voltar ao topo */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  z-index: 1000;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+}
+
+.back-to-top.show {
+  display: block;
+}
+
+/* Rodapé */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--footer-h);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
   }
-  
-  /* -------- reset rápido -------- */
-  *{box-sizing:border-box} body{font-family:"Segoe UI",sans-serif;background:#fafafa;
-    padding-top:var(--header-h);padding-bottom:var(--footer-h);color:var(--dark)}
-  
-  /* -------- navbar -------- */
-  .navbar{height:var(--header-h);box-shadow:0 2px 4px rgba(0,0,0,.1)}
-  
-  /* -------- sidebar -------- */
-  .offcanvas{width:var(--sidebar-w)!important}
-  .nav-sidebar{height:100%;overflow-y:auto}
-  .nav-sidebar .nav-link{padding:12px 20px;border-left:3px solid transparent;color:var(--dark);font-weight:500}
-  .nav-sidebar .nav-link:hover{background:rgba(13,110,253,.1);border-left-color:var(--primary);color:var(--primary)}
-  .nav-sidebar .nav-link.active{background:rgba(13,110,253,.15);border-left-color:var(--primary);color:var(--primary);font-weight:600}
-  .nav-subtopics{list-style:none;margin:0;padding:0;background:rgba(0,0,0,.03)}
-  .nav-subtopics a{display:block;padding:8px 20px 8px 50px;font-size:.9rem;color:#6c757d}
-  
-  /* -------- conteúdo -------- */
-  .main-content{min-height:calc(100vh - var(--header-h) - var(--footer-h));padding:20px 0}
-  #content-area{background:#fff;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1);margin:0 auto;max-width:1000px;min-height:500px}
-  .content-page{padding:30px;line-height:1.8}
-  .content-page h1{color:var(--primary);border-bottom:3px solid var(--primary);padding-bottom:10px;margin-bottom:30px;font-weight:600}
-  .content-page h2{color:var(--primary);margin-top:35px;margin-bottom:20px;font-weight:600;border-left:4px solid var(--primary);padding-left:15px}
-  
-  /* -------- botão topo -------- */
-  .back-to-top{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;display:none;z-index:1000;border:none;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-  .back-to-top.show{display:block}
-  
-  /* -------- rodapé -------- */
-  .footer{position:fixed;bottom:0;left:0;right:0;height:var(--footer-h)}
-  
-  /* -------- responsivo -------- */
-  @media(max-width:768px){.content-page{padding:20px15px}}
-  
+  #content-area {
+    padding: 15px !important;
+  }
+}

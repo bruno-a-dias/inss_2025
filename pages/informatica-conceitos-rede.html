@@ -1,0 +1,134 @@
+<div class="content-page">
+    <h1 id="informatica-conceitos-rede"><i class="fas fa-globe-americas me-3"></i>5.1 Conceitos de Rede</h1>
+  
+    <div class="alert alert-primary" role="alert">
+      <h4 class="alert-heading"><i class="fas fa-info-circle me-2"></i>A Base da Comunicação Digital</h4>
+      <p class="mb-0">Compreender os tipos de rede é fundamental para entender como a informação circula, tanto dentro de uma organização como o INSS (Intranet) quanto para o público externo (Internet).</p>
+    </div>
+  
+    <h2 id="internet">Internet</h2>
+    <div class="card mb-3">
+      <div class="card-header bg-primary text-white">
+        <i class="fas fa-globe me-2"></i>A Rede Mundial de Computadores
+      </div>
+      <div class="card-body">
+        <p>A <strong>Internet</strong> é uma rede de escala mundial, pública e de acesso irrestrito, que interconecta milhões de dispositivos (computadores, servidores, smartphones) através de um conjunto padronizado de protocolos de comunicação, sendo o principal o TCP/IP (Transmission Control Protocol/Internet Protocol).</p>
+        
+        <h6>Características Principais:</h6>
+        <ul>
+          <li><strong>Pública:</strong> Não possui um "dono"; é um conglomerado de redes interligadas.</li>
+          <li><strong>Global:</strong> Alcance mundial.</li>
+          <li><strong>Descentralizada:</strong> Não há um ponto central de controle.</li>
+          <li><strong>Serviços:</strong> Oferece serviços como a World Wide Web (WWW), e-mail, transferência de arquivos (FTP), etc.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <h2 id="intranet">Intranet</h2>
+    <div class="card mb-3">
+      <div class="card-header bg-success text-white">
+        <i class="fas fa-building me-2"></i>A Rede Corporativa
+      </div>
+      <div class="card-body">
+        <p>A <strong>Intranet</strong> é uma rede privada pertencente a uma organização. Ela utiliza a mesma tecnologia da Internet (navegadores, protocolos TCP/IP), mas seu acesso é restrito aos funcionários e membros daquela organização.</p>
+        
+        <h6>Características Principais:</h6>
+        <ul>
+          <li><strong>Privada e Restrita:</strong> O acesso é controlado por login, senha ou barreiras físicas.</li>
+          <li><strong>Tecnologia da Internet:</strong> Usa as mesmas ferramentas e protocolos, o que facilita o uso e desenvolvimento.</li>
+          <li><strong>Finalidade:</strong> Compartilhamento de informações internas, comunicação entre setores, sistemas corporativos (ex: sistema de gestão de benefícios do INSS).</li>
+          <li><strong>Segurança:</strong> Geralmente protegida por firewalls para impedir acessos externos não autorizados.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <h2 id="extranet">Extranet</h2>
+    <div class="card mb-3">
+      <div class="card-header bg-warning text-dark">
+        <i class="fas fa-share-alt me-2"></i>A Extensão Segura da Intranet
+      </div>
+      <div class="card-body">
+        <p>A <strong>Extranet</strong> é uma extensão da Intranet de uma organização, que permite o acesso controlado a usuários externos autorizados, como fornecedores, parceiros ou clientes. O acesso geralmente é feito através da Internet, por meio de um portal seguro.</p>
+        
+        <h6>Características Principais:</h6>
+        <ul>
+          <li><strong>Acesso Externo Controlado:</strong> Permite que terceiros autorizados acessem partes específicas da rede interna.</li>
+          <li><strong>Segurança:</strong> Exige autenticação forte (login, senha, VPN) para garantir a segurança dos dados.</li>
+          <li><strong>Finalidade:</strong> Colaboração com parceiros, acesso de clientes a sistemas específicos, compartilhamento de informações com fornecedores.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <h2 id="quadro-comparativo">Quadro Comparativo</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Característica</th>
+            <th>Internet</th>
+            <th>Intranet</th>
+            <th>Extranet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Abrangência</strong></td>
+            <td>Mundial</td>
+            <td>Corporativa (Local)</td>
+            <td>Corporativa com acesso externo</td>
+          </tr>
+          <tr>
+            <td><strong>Acesso</strong></td>
+            <td>Público</td>
+            <td>Privado e Restrito</td>
+            <td>Privado e Controlado</td>
+          </tr>
+          <tr>
+            <td><strong>Usuários</strong></td>
+            <td>Qualquer pessoa</td>
+            <td>Membros da organização</td>
+            <td>Membros + Usuários Externos Autorizados</td>
+          </tr>
+          <tr>
+            <td><strong>Exemplo Prático</strong></td>
+            <td>Acessar o site g1.com.br</td>
+            <td>Servidor do INSS acessando o sistema interno de concessão de benefícios.</td>
+            <td>Um convênio médico acessando o sistema do INSS para verificar dados de um segurado.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <h2 id="exercicios-rede">Exercícios Comentados</h2>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 1:</strong> Um servidor do INSS, ao utilizar um sistema de comunicação interna para trocar mensagens com um colega de outro setor, está fazendo uso da Internet.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> A comunicação interna, restrita aos membros da organização (INSS), caracteriza o uso de uma <strong>Intranet</strong>. A Internet é a rede pública mundial.</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 2:</strong> A principal diferença entre Internet e Intranet reside na tecnologia utilizada, pois a Intranet usa protocolos proprietários e exclusivos.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> A tecnologia é a mesma (TCP/IP, navegadores, etc.). A principal diferença está no <strong>nível de acesso</strong> e na <strong>abrangência</strong>: a Internet é pública e global, enquanto a Intranet é privada e restrita à organização.</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 3:</strong> Uma empresa que disponibiliza um portal online para seus fornecedores consultarem o status de pagamentos, mediante login e senha, está utilizando uma Extranet.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-success">CERTO</span></p>
+        <p><strong>Justificativa:</strong> A disponibilização de acesso controlado a uma parte do sistema interno para um parceiro externo (fornecedor) é a definição clássica de uma <strong>Extranet</strong>.</p>
+      </div>
+    </div>
+  </div>
+  
