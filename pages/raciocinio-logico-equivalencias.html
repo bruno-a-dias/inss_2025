@@ -1,0 +1,124 @@
+<div class="content-page">
+    <h1 id="equivalencias-negacoes"><i class="fas fa-retweet me-3"></i>6.3 Equivalências e Negações</h1>
+  
+    <div class="alert alert-primary" role="alert">
+      <h4 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Essencial para a Prova!</h4>
+      <p class="mb-0">Saber encontrar proposições equivalentes e negar corretamente proposições compostas são habilidades <strong>extremamente cobradas</strong> pela Cebraspe e outras bancas[5][13].</p>
+    </div>
+  
+    <h2 id="equivalencias-logicas">Equivalências Lógicas</h2>
+    <div class="card mb-3">
+      <div class="card-body">
+          <p>Duas proposições são <strong>logicamente equivalentes</strong> quando possuem a mesma tabela-verdade. Na prática, elas "dizem a mesma coisa" com palavras diferentes.</p>
+      </div>
+    </div>
+    
+    <h3>A) Equivalências da Condicional (p → q)</h3>
+    <div class="alert alert-danger">
+        <h5><i class="fas fa-star me-2"></i>As duas mais importantes para concursos!</h5>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header bg-success text-white"><strong>1. Contrapositiva</strong></div>
+                <div class="card-body">
+                    <p><strong>Fórmula:</strong> (p → q) ⇔ (~q → ~p)</p>
+                    <p><strong>Mnemônico:</strong> "Nega e inverte."</p>
+                    <p><strong>Exemplo:</strong> "Se estudo (p), então passo (q)" é equivalente a "Se não passo (~q), então não estudo (~p)".</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header bg-info text-white"><strong>2. Disjuntiva</strong></div>
+                <div class="card-body">
+                    <p><strong>Fórmula:</strong> (p → q) ⇔ (~p ∨ q)</p>
+                    <p><strong>Mnemônico:</strong> "Neymar" (Nega a primeira, mantém a segunda com 'ou').</p>
+                    <p><strong>Exemplo:</strong> "Se estudo (p), então passo (q)" é equivalente a "Não estudo (~p) ou passo (q)".</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h3>B) Leis de De Morgan (Negação de "E" e "OU")</h3>
+    <div class="card mb-3">
+      <div class="card-header bg-warning text-dark">
+        <i class="fas fa-exchange-alt me-2"></i>Troca de Conectivos
+      </div>
+      <div class="card-body">
+          <ol>
+              <li><strong>Negação da Conjunção:</strong> ~(p ∧ q) ⇔ (~p ∨ ~q)<br><em>"Nega tudo e troca 'E' por 'OU'."</em></li>
+              <li><strong>Negação da Disjunção:</strong> ~(p ∨ q) ⇔ (~p ∧ ~q)<br><em>"Nega tudo e troca 'OU' por 'E'."</em></li>
+          </ol>
+      </div>
+    </div>
+  
+    <h2 id="negacoes-proposicoes">Negação de Proposições Compostas</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Proposição</th>
+            <th>Negação (~p)</th>
+            <th>Exemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Conjunção (p ∧ q)</strong><br>"Estudo e trabalho"</td>
+            <td>~p ∨ ~q</td>
+            <td>"Não estudo <strong>ou</strong> não trabalho"</td>
+          </tr>
+          <tr>
+            <td><strong>Disjunção (p ∨ q)</strong><br>"Estudo ou trabalho"</td>
+            <td>~p ∧ ~q</td>
+            <td>"Não estudo <strong>e</strong> não trabalho"</td>
+          </tr>
+          <tr>
+            <td><strong>Condicional (p → q)</strong><br>"Se estudo, passo"</td>
+            <td>p ∧ ~q</td>
+            <td>"Estudo <strong>e não</strong> passo"<br><em>(Mnemônico: "Mantém a primeira e nega a segunda")</em></td>
+          </tr>
+          <tr>
+            <td><strong>Bicondicional (p ↔ q)</strong></td>
+            <td>p ⊻ q</td>
+            <td>Equivalente à disjunção exclusiva ("Ou p, ou q")</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <h2 id="exercicios-equivalencias">Exercícios Comentados</h2>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 1 (CESPE/CEBRASPE):</strong> A negação da proposição "O servidor atendeu ao público e o processo foi concluído" é "O servidor não atendeu ao público ou o processo não foi concluído".
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-success">CERTO</span></p>
+        <p><strong>Justificativa:</strong> A proposição é uma conjunção (p ∧ q). Para negá-la, aplicamos a Lei de De Morgan: ~(p ∧ q) ⇔ (~p ∨ ~q). Ou seja, negamos as duas partes e trocamos o conectivo "E" por "OU". A negação apresentada está correta[9].</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 2 (CESPE/CEBRASPE):</strong> A proposição "Se o candidato estuda, então ele é aprovado" é logicamente equivalente a "O candidato não estuda e não é aprovado".
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> A proposição é uma condicional (p → q). Suas duas principais equivalências são a contrapositiva (~q → ~p) e a disjuntiva (~p ∨ q). A proposição apresentada ("não estuda e não é aprovado", ou ~p ∧ ~q) não corresponde a nenhuma das equivalências válidas. Na verdade, ela é a negação da disjunção (p ∨ q).</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 3 (CESPE/CEBRASPE):</strong> A negação da proposição "Se o benefício foi concedido, então o segurado cumpriu os requisitos" é a proposição "O benefício foi concedido e o segurado não cumpriu os requisitos".
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-success">CERTO</span></p>
+        <p><strong>Justificativa:</strong> A negação de uma condicional (p → q) é feita mantendo-se a primeira parte (p) e negando-se a segunda (~q), unidas pelo conectivo "E". A estrutura é (p ∧ ~q). A negação apresentada na questão segue exatamente essa regra.</p>
+      </div>
+    </div>
+  </div>
+  

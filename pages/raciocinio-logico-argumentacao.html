@@ -1,0 +1,69 @@
+<div class="content-page">
+    <h1 id="argumentacao-logica"><i class="fas fa-comments me-3"></i>6.5 Argumentação Lógica</h1>
+  
+    <div class="alert alert-primary" role="alert">
+      <h4 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Validando o Raciocínio</h4>
+      <p class="mb-0">A análise de argumentos é a aplicação final da lógica proposicional. O objetivo é determinar se uma conclusão deriva validamente de um conjunto de premissas[9][7].</p>
+    </div>
+  
+    <h2 id="estrutura-argumento">Estrutura de um Argumento</h2>
+    <div class="card mb-3">
+      <div class="card-body">
+          <p>Um argumento lógico é um conjunto de proposições em que uma delas (a <strong>conclusão</strong>) é afirmada como derivada das outras (as <strong>premissas</strong>).</p>
+      </div>
+    </div>
+  
+    <h2 id="validade-argumento">Validade de um Argumento</h2>
+    <div class="alert alert-success">
+        <h5><i class="fas fa-star me-2"></i>Definição de Validade:</h5>
+        <p>Um argumento é <strong>válido</strong> quando é <strong>impossível</strong> que suas premissas sejam todas verdadeiras e sua conclusão seja falsa ao mesmo tempo.</p>
+        <p class="mb-0"><strong>Atenção:</strong> Validade não depende da verdade real das premissas, mas sim da <strong>relação lógica</strong> entre premissas e conclusão.</p>
+    </div>
+    
+    <h2 id="regras-inferencia">Principais Regras de Inferência</h2>
+    <p>São estruturas de argumentos válidos que servem como atalhos para a resolução de questões.</p>
+    
+    <div class="row">
+      <div class="col-md-6">
+          <div class="card mb-3">
+              <div class="card-header bg-primary text-white"><strong>Modus Ponens (Afirmação do Antecedente)</strong></div>
+              <div class="card-body">
+                  <p><strong>Estrutura:</strong><br>Premissa 1: p → q<br>Premissa 2: p<br>Conclusão: q</p>
+                  <p class="small"><strong>Exemplo:</strong> "Se chove (p), a rua molha (q). Choveu (p). Logo, a rua molhou (q)."</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card mb-3">
+              <div class="card-header bg-danger text-white"><strong>Modus Tollens (Negação do Consequente)</strong></div>
+              <div class="card-body">
+                  <p><strong>Estrutura:</strong><br>Premissa 1: p → q<br>Premissa 2: ~q<br>Conclusão: ~p</p>
+                  <p class="small"><strong>Exemplo:</strong> "Se chove (p), a rua molha (q). A rua não molhou (~q). Logo, não choveu (~p)."</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <h2 id="exercicios-argumentacao">Exercícios Comentados</h2>
+    
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 1 (CESPE/CEBRASPE):</strong> Considere o seguinte argumento: "Se o servidor estuda, ele é promovido. O servidor foi promovido. Logo, o servidor estudou." Este argumento é válido.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> Este argumento comete a <strong>falácia da afirmação do consequente</strong>. A estrutura é: (p → q), q, logo p. A validade não é garantida, pois o servidor poderia ter sido promovido por outro motivo (q sendo V), mesmo sem ter estudado (p sendo F). Nesse caso, as premissas seriam V e a conclusão F, invalidando o argumento.</p>
+      </div>
+    </div>
+    
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 2 (CESPE/CEBRASPE):</strong> O argumento "Todos os servidores do INSS são eficientes. Joana não é eficiente. Portanto, Joana não é servidora do INSS." é um argumento válido.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-success">CERTO</span></p>
+        <p><strong>Justificativa:</strong> Este é um exemplo clássico de argumento válido, aplicando a regra Modus Tollens. Podemos reescrevê-lo como uma condicional: "Se alguém é servidor do INSS (p), então é eficiente (q)". A segunda premissa é "Joana não é eficiente" (~q). A conclusão lógica necessária é "Joana não é servidora do INSS" (~p). É impossível as premissas serem verdadeiras e a conclusão falsa.</p>
+      </div>
+    </div>
+  </div>
+  

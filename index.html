@@ -67,27 +67,58 @@
           </li>
 
      <!-- TÓPICO 2: ÉTICA -->
-            <li class="nav-item">
-              <a class="nav-link main-topic" data-page="etica-servico-publico" href="#">
-               <i class="fas fa-balance-scale me-2"></i> 2. Ética no Serviço Público
-              </a>
-            </li>
-
-          <!-- TÓPICO 3: DIREITO CONSTITUCIONAL (PLACEHOLDER) -->
+     <li class="nav-item">
+      <a class="nav-link main-topic" data-bs-toggle="collapse" href="#submenu-etica" role="button" aria-expanded="false">
+        <i class="fas fa-balance-scale me-2"></i> 2. Ética no Serviço Público
+        <i class="fas fa-chevron-down float-end"></i>
+      </a>
+      <div class="collapse" id="submenu-etica">
+        <ul class="nav flex-column nav-submenu">
+          <li class="nav-item"><a class="nav-link" data-page="etica-conceitos" href="#">2.1 Conceitos Fundamentais</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="etica-codigo" href="#">2.2 Código de Ética (Decreto 1.171/94)</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="etica-improbidade" href="#">2.3 Improbidade Administrativa</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="etica-conflito-lai" href="#">2.4 Conflito de Interesses e LAI</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="etica-exercicios" href="#">2.5 Exercícios Integrados</a></li>
+        </ul>
+      </div>
+    </li>
+          
+          <!-- TÓPICO 3: DIREITO CONSTITUCIONAL -->
           <li class="nav-item">
-            <a class="nav-link main-topic" data-page="direito-constitucional" href="#">
+            <a class="nav-link main-topic" data-bs-toggle="collapse" href="#submenu-constitucional" role="button" aria-expanded="false">
               <i class="fas fa-gavel me-2"></i> 3. Noções de Direito Constitucional
+              <i class="fas fa-chevron-down float-end"></i>
             </a>
+            <div class="collapse" id="submenu-constitucional">
+              <ul class="nav flex-column nav-submenu">
+                <li class="nav-item"><a class="nav-link" data-page="constitucional-principios" href="#">3.1 Constituição e Princípios</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="constitucional-direitos-garantias" href="#">3.2 Direitos e Garantias</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="constitucional-organizacao-estado" href="#">3.3 Organização do Estado</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="constitucional-administracao-publica" href="#">3.4 Administração Pública</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="constitucional-seguridade" href="#">3.5 Seguridade na Constituição</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="constitucional-exercicios" href="#">3.6 Exercícios Integrados</a></li>
+              </ul>
+            </div>
           </li>
-
-          <!-- TÓPICO 4: DIREITO ADMINISTRATIVO (PLACEHOLDER) -->
+          <!-- TÓPICO 4: DIREITO ADMINISTRATIVO -->
           <li class="nav-item">
-            <a class="nav-link main-topic" data-page="direito-administrativo" href="#">
+            <a class="nav-link main-topic" data-bs-toggle="collapse" href="#submenu-administrativo" role="button" aria-expanded="false">
               <i class="fas fa-scroll me-2"></i> 4. Noções de Direito Administrativo
+              <i class="fas fa-chevron-down float-end"></i>
             </a>
+            <div class="collapse" id="submenu-administrativo">
+              <ul class="nav flex-column nav-submenu">
+                <li class="nav-item"><a class="nav-link" data-page="administrativo-conceitos" href="#">4.1 Conceitos e Princípios</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="administrativo-organizacao" href="#">4.2 Organização Administrativa</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="administrativo-atos" href="#">4.3 Atos Administrativos</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="administrativo-poderes" href="#">4.4 Poderes Administrativos</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="administrativo-responsabilidade" href="#">4.5 Responsabilidade Civil</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="administrativo-exercicios" href="#">4.6 Exercícios Integrados</a></li>
+              </ul>
+            </div>
           </li>
 
-          <!-- TÓPICO 5: INFORMÁTICA (PLACEHOLDER) -->
+          <!-- TÓPICO 5: INFORMÁTICA -->
           <li class="nav-item">
             <a class="nav-link main-topic" data-bs-toggle="collapse" href="#submenu-informatica" role="button" aria-expanded="false">
               <i class="fas fa-desktop me-2"></i> 5. Noções de Informática
@@ -107,27 +138,66 @@
 
           <!-- TÓPICO 6: RACIOCÍNIO LÓGICO (PLACEHOLDER) -->
           <li class="nav-item">
-            <a class="nav-link main-topic" href="#" onclick="alert('Conteúdo em desenvolvimento.')">
+            <a class="nav-link main-topic" data-bs-toggle="collapse" href="#submenu-raciocinio-logico" role="button" aria-expanded="false">
               <i class="fas fa-brain me-2"></i> 6. Raciocínio Lógico-Matemático
+              <i class="fas fa-chevron-down float-end"></i>
             </a>
+            <div class="collapse" id="submenu-raciocinio-logico">
+              <ul class="nav flex-column nav-submenu">
+                <li class="nav-item"><a class="nav-link" data-page="raciocinio-logico-proposicional" href="#">6.1 Lógica Proposicional</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="raciocinio-logico-conectivos" href="#">6.2 Conectivos e Tabela-Verdade</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="raciocinio-logico-equivalencias" href="#">6.3 Equivalências e Negações</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="raciocinio-logico-diagramas" href="#">6.4 Diagramas e Conjuntos</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="raciocinio-logico-argumentacao" href="#">6.5 Argumentação Lógica</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="raciocinio-logico-exercicios" href="#">6.6 Exercícios Integrados</a></li>
+              </ul>
+            </div>
           </li>
-
           <!-- CONHECIMENTOS ESPECÍFICOS -->
           <li class="nav-item nav-header">CONHECIMENTOS ESPECÍFICOS</li>
 
           <!-- Tópicos 7 a 19 -->
           <li class="nav-item">
-            <a class="nav-link main-topic" href="#" onclick="alert('Conteúdo em desenvolvimento.')"><i class="fas fa-shield-alt me-2"></i> 7. Seguridade Social</a>
+            <a class="nav-link main-topic" data-bs-toggle="collapse" href="#submenu-seguridade" role="button" aria-expanded="false">
+              <i class="fas fa-shield-alt me-2"></i> 7. Seguridade Social
+              <i class="fas fa-chevron-down float-end"></i>
+            </a>
+            <div class="collapse" id="submenu-seguridade">
+              <ul class="nav flex-column nav-submenu">
+                <li class="nav-item"><a class="nav-link" data-page="seguridade-conceitos" href="#">7.1 Conceitos e Princípios</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="seguridade-saude" href="#">7.2 Saúde na Constituição</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="seguridade-previdencia" href="#">7.3 Previdência na Constituição</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="seguridade-assistencia" href="#">7.4 Assistência na Constituição</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="seguridade-organizacao-financiamento" href="#">7.5 Organização e Financiamento</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="seguridade-exercicios" href="#">7.6 Exercícios Integrados</a></li>
+              </ul>
+            </div>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link main-topic" href="#" onclick="alert('Conteúdo em desenvolvimento.')"><i class="fas fa-book me-2"></i> 8. Legislação Previdenciária</a>
+            <a class="nav-link main-topic" data-bs-toggle="collapse" href="#submenu-legislacao" role="button" aria-expanded="false">
+              <i class="fas fa-book me-2"></i> 8. Legislação Previdenciária
+              <i class="fas fa-chevron-down float-end"></i>
+            </a>
+            <div class="collapse" id="submenu-legislacao">
+              <ul class="nav flex-column nav-submenu">
+                <li class="nav-item"><a class="nav-link" data-page="legislacao-introducao" href="#">8.1 Fontes e Aplicação</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="legislacao-lei-8212" href="#">8.2 Lei 8.212/91 (Custeio)</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="legislacao-lei-8213" href="#">8.3 Lei 8.213/91 (Benefícios)</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="legislacao-decreto-3048" href="#">8.4 Decreto 3.048/99 (Regulamento)</a></li>
+                <li class="nav-item"><a class="nav-link" data-page="legislacao-exercicios" href="#">8.5 Exercícios Integrados</a></li>
+              </ul>
+            </div>
           </li>
+
            <li class="nav-item">
             <a class="nav-link main-topic" href="#" onclick="alert('Conteúdo em desenvolvimento.')"><i class="fas fa-users me-2"></i> 9. Regime Geral (RGPS)</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link main-topic" href="#" onclick="alert('Conteúdo em desenvolvimento.')"><i class="fas fa-building me-2"></i> 10. Empresa e Empregador Doméstico</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link main-topic" href="#" onclick="alert('Conteúdo em desenvolvimento.')"><i class="fas fa-hand-holding-usd me-2"></i> 11. Financiamento</a>
           </li>

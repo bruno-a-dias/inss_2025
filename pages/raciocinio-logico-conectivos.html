@@ -1,0 +1,155 @@
+<div class="content-page">
+    <h1 id="conectivos-tabela-verdade"><i class="fas fa-project-diagram me-3"></i>6.2 Conectivos e Tabela-Verdade</h1>
+  
+    <div class="alert alert-primary" role="alert">
+      <h4 class="alert-heading"><i class="fas fa-info-circle me-2"></i>O Coração da Lógica!</h4>
+      <p class="mb-0">Os conectivos lógicos são as ferramentas que unem proposições simples para formar proposições compostas. Dominar a tabela-verdade de cada um deles é <strong>essencial</strong> para resolver a maioria das questões[5].</p>
+    </div>
+  
+    <h2 id="conectivos-logicos">Os 5 Conectivos Lógicos</h2>
+    <p>São operadores que conectam proposições simples. Cada um possui uma regra específica para definir o valor lógico da proposição composta resultante[9].</p>
+  
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="card mb-4">
+          <div class="card-header bg-primary text-white"><strong>1. Conjunção (E)</strong></div>
+          <div class="card-body">
+            <p><strong>Símbolo:</strong> ∧</p>
+            <p><strong>Lê-se:</strong> "p e q"</p>
+            <p><strong>Regra:</strong> Só é verdadeira (V) quando <strong>ambas</strong> as proposições são verdadeiras.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card mb-4">
+          <div class="card-header bg-success text-white"><strong>2. Disjunção Inclusiva (OU)</strong></div>
+          <div class="card-body">
+            <p><strong>Símbolo:</strong> ∨</p>
+            <p><strong>Lê-se:</strong> "p ou q"</p>
+            <p><strong>Regra:</strong> Só é falsa (F) quando <strong>ambas</strong> as proposições são falsas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card mb-4">
+          <div class="card-header bg-warning text-dark"><strong>3. Disjunção Exclusiva (OU... OU)</strong></div>
+          <div class="card-body">
+            <p><strong>Símbolo:</strong> ⊻ ou ∨</p>
+            <p><strong>Lê-se:</strong> "ou p ou q"</p>
+            <p><strong>Regra:</strong> Só é verdadeira (V) quando os valores lógicos são <strong>diferentes</strong>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="card mb-4">
+          <div class="card-header bg-danger text-white"><strong>4. Condicional (SE... ENTÃO)</strong></div>
+          <div class="card-body">
+            <p><strong>Símbolo:</strong> →</p>
+            <p><strong>Lê-se:</strong> "se p, então q"</p>
+            <p><strong>Regra:</strong> Só é falsa (F) no caso "Vera Fischer" (<strong>V → F</strong>). Nos demais casos, é verdadeira.</p>
+            <p><em>(p é antecedente, q é consequente)</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="card mb-4">
+          <div class="card-header bg-info text-white"><strong>5. Bicondicional (SE E SOMENTE SE)</strong></div>
+          <div class="card-body">
+            <p><strong>Símbolo:</strong> ↔</p>
+            <p><strong>Lê-se:</strong> "p se e somente se q"</p>
+            <p><strong>Regra:</strong> Só é verdadeira (V) quando os valores lógicos são <strong>iguais</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <h2 id="tabela-verdade">Tabela-Verdade Completa</h2>
+    <p>A tabela-verdade mostra todos os possíveis valores lógicos de uma proposição composta, com base nos valores das proposições simples que a formam. O número de linhas é calculado por <strong>2<sup>n</sup></strong>, onde 'n' é o número de proposições simples.</p>
+    
+    <div class="table-responsive">
+      <table class="table table-bordered text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>Negação<br>(~p)</th>
+            <th>Conjunção<br>(p ∧ q)</th>
+            <th>Disjunção<br>(p ∨ q)</th>
+            <th>Condicional<br>(p → q)</th>
+            <th>Bicondicional<br>(p ↔ q)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-success-subtle fw-bold">V</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-success-subtle fw-bold">V</td>
+          </tr>
+          <tr>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-danger-subtle fw-bold">F</td>
+            <td class="bg-danger-subtle">F</td>
+          </tr>
+          <tr>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-danger-subtle">F</td>
+          </tr>
+          <tr>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-danger-subtle">F</td>
+            <td class="bg-danger-subtle fw-bold">F</td>
+            <td class="bg-success-subtle">V</td>
+            <td class="bg-success-subtle fw-bold">V</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <h2 id="exercicios-conectivos">Exercícios Comentados</h2>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 1 (CESPE/CEBRASPE):</strong> Considere a proposição "Se o servidor foi diligente, então o processo foi arquivado". Se a proposição "o processo foi arquivado" for falsa, então a proposição composta é necessariamente falsa.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> A proposição é uma condicional (p → q). Sabemos que q é Falsa. O valor lógico da condicional dependerá do valor de p. Se p for V (V → F), a condicional será Falsa. Mas se p for F (F → F), a condicional será Verdadeira. Como não podemos garantir o resultado, a afirmação de que é "necessariamente falsa" está incorreta.</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 2 (CESPE/CEBRASPE):</strong> A proposição "O servidor atendeu ao público ou não elaborou o relatório" é verdadeira se o servidor não tiver atendido ao público e tiver elaborado o relatório.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> Vamos analisar os valores. "O servidor não atendeu ao público" → p é Falso. "O servidor elaborou o relatório" → ~q é Falso (pois q seria "não elaborou"). A proposição composta é uma disjunção (p ∨ q). Com p=F e q=F, a disjunção (F ∨ F) resulta em Falso. Portanto, a afirmação está incorreta.</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 3 (CESPE/CEBRASPE):</strong> Para que a proposição "Maria é médica e Pedro é dentista" seja falsa, é necessário que ambas as proposições simples que a compõem sejam falsas.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> A proposição é uma conjunção (p ∧ q). A regra da conjunção diz que ela só é Verdadeira se AMBAS forem V. Portanto, para que a conjunção seja Falsa, basta que <strong>pelo menos uma</strong> das proposições seja falsa. Não é necessário que ambas sejam.</p>
+      </div>
+    </div>
+  </div>
+  

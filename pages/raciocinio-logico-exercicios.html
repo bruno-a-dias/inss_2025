@@ -1,0 +1,69 @@
+<div class="content-page">
+    <h1 id="exercicios-raciocinio-logico"><i class="fas fa-clipboard-check me-3"></i>6.6 Exercícios Integrados</h1>
+  
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading"><i class="fas fa-graduation-cap me-2"></i>Simulado do Módulo!</h4>
+      <p class="mb-0">Teste seus conhecimentos sobre todos os sub-tópicos de Raciocínio Lógico. As questões a seguir integram Lógica Proposicional, Conectivos, Equivalências, Negações e Diagramas.</p>
+    </div>
+  
+    <h2 id="questoes-simulado">Questões do Simulado</h2>
+    
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 1 (CESPE/CEBRASPE - Adaptada):</strong> A negação da proposição "O servidor é competente e o cidadão está satisfeito" é "O servidor não é competente e o cidadão não está satisfeito".
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> A proposição é uma conjunção (p ∧ q). Sua negação, pela Lei de De Morgan, é ~(p ∧ q) ⇔ (~p ∨ ~q). Portanto, a negação correta é: "O servidor não é competente <strong>ou</strong> o cidadão não está satisfeito".</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 2 (CESPE/CEBRASPE - Adaptada):</strong> A proposição "Se o processo está correto, então o benefício é concedido" é logicamente equivalente à proposição "O processo não está correto ou o benefício é concedido".
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-success">CERTO</span></p>
+        <p><strong>Justificativa:</strong> Esta é uma das equivalências fundamentais da condicional (p → q ⇔ ~p ∨ q). A questão aplicou corretamente a regra: negou a primeira parte, manteve a segunda e trocou o conectivo "Se... então" por "ou".</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 3 (CESPE/CEBRASPE - Adaptada):</strong> Considere que a proposição "Se chove, então faz frio" é falsa. Nesse caso, a proposição "Chove e faz frio" é verdadeira.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> Uma condicional (p → q) só é falsa no caso V → F. Portanto, se "Se chove, então faz frio" é falsa, obrigatoriamente "Chove" é Verdadeiro (V) e "Faz frio" é Falso (F). A proposição "Chove e faz frio" (p ∧ q) seria V ∧ F, o que resulta em Falso.</p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 4 (CESPE/CEBRASPE - Adaptada):</strong> Em um grupo de 50 analistas, 30 analisam processos de aposentadoria, 25 analisam processos de pensão e 10 analisam ambos os tipos. Sendo assim, 5 analistas do grupo não analisam nenhum desses dois tipos de processo.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-success">CERTO</span></p>
+        <p><strong>Justificativa:</strong> Usando diagramas:
+          <ol class="small">
+              <li><strong>Interseção (ambos):</strong> 10</li>
+              <li><strong>Apenas Aposentadoria:</strong> 30 - 10 = 20</li>
+              <li><strong>Apenas Pensão:</strong> 25 - 10 = 15</li>
+              <li><strong>Total que analisa algo:</strong> 20 + 15 + 10 = 45</li>
+              <li><strong>Nenhum:</strong> 50 (total) - 45 = 5. A afirmação está correta.</li>
+          </ol>
+        </p>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 5 (CESPE/CEBRASPE - Adaptada):</strong> O argumento a seguir é válido: "Se Ana é técnica do INSS, ela é servidora pública. Ana é servidora pública. Logo, Ana é técnica do INSS."
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> Este argumento comete a <strong>falácia da afirmação do consequente</strong>. Ana poderia ser servidora pública de outro órgão. Para que o argumento fosse válido pela estrutura apresentada, a segunda premissa deveria ser "Ana é técnica do INSS" (Modus Ponens) ou "Ana não é servidora pública" (Modus Tollens).</p>
+      </div>
+    </div>
+  </div>
+  

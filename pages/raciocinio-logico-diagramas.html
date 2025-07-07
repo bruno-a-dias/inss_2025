@@ -1,0 +1,79 @@
+<div class="content-page">
+    <h1 id="diagramas-conjuntos"><i class="fas fa-shapes me-3"></i>6.4 Diagramas e Conjuntos</h1>
+  
+    <div class="alert alert-primary" role="alert">
+      <h4 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Visualizando a Lógica!</h4>
+      <p class="mb-0">Os Diagramas Lógicos (ou Diagramas de Venn) são uma ferramenta visual poderosa para resolver problemas que envolvem grupos e suas relações. A Cebraspe frequentemente utiliza esse tipo de questão para testar o raciocínio quantitativo[5][6].</p>
+    </div>
+  
+    <h2 id="operacoes-conjuntos">Operações Básicas com Conjuntos</h2>
+    <div class="card mb-3">
+      <div class="card-body">
+          <div class="row">
+              <div class="col-md-4">
+                  <h5 class="text-primary">União (A ∪ B)</h5>
+                  <p class="small">Todos os elementos que pertencem a A, a B, ou a ambos.</p>
+              </div>
+              <div class="col-md-4">
+                  <h5 class="text-success">Interseção (A ∩ B)</h5>
+                  <p class="small">Apenas os elementos que pertencem a A e a B simultaneamente.</p>
+              </div>
+              <div class="col-md-4">
+                  <h5 class="text-danger">Diferença (A - B)</h5>
+                  <p class="small">Os elementos que pertencem a A, mas não pertencem a B.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <h2 id="resolvendo-problemas">Resolvendo Problemas com Diagramas</h2>
+    <div class="alert alert-success">
+        <h5><i class="fas fa-star me-2"></i>Método Passo a Passo:</h5>
+        <p>A estratégia mais eficaz para resolver problemas com diagramas é começar o preenchimento pela <strong>interseção central</strong> e ir para as áreas externas.</p>
+    </div>
+    
+    <h3>Problema com 2 Conjuntos</h3>
+    <div class="card">
+        <div class="card-header">Exemplo Prático</div>
+        <div class="card-body">
+            <p><em>"Em um grupo de 100 servidores, 60 leem o jornal A, 50 leem o jornal B e 20 leem ambos. Quantos não leem nenhum dos dois?"</em></p>
+            <ol>
+                <li><strong>Comece pela interseção (ambos):</strong> Coloque <strong>20</strong> na área central.</li>
+                <li><strong>Calcule "Apenas A":</strong> Total de A (60) - Interseção (20) = <strong>40</strong>.</li>
+                <li><strong>Calcule "Apenas B":</strong> Total de B (50) - Interseção (20) = <strong>30</strong>.</li>
+                <li><strong>Some todas as partes:</strong> 40 (só A) + 30 (só B) + 20 (ambos) = 90 servidores que leem pelo menos um jornal.</li>
+                <li><strong>Calcule "Nenhum":</strong> Total do grupo (100) - Leitores (90) = <strong>10</strong>.</li>
+            </ol>
+        </div>
+    </div>
+  
+    <h2 id="exercicios-diagramas">Exercícios Comentados</h2>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 1 (CESPE/CEBRASPE):</strong> Em uma agência do INSS com 80 servidores, 45 falam inglês, 35 falam espanhol e 15 falam ambas as línguas. Nessas condições, 15 servidores não falam nenhuma dessas línguas.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-success">CERTO</span></p>
+        <p><strong>Justificativa:</strong></p>
+        <ol class="small">
+            <li><strong>Interseção (ambas):</strong> 15</li>
+            <li><strong>Apenas Inglês:</strong> 45 (total inglês) - 15 (ambas) = 30</li>
+            <li><strong>Apenas Espanhol:</strong> 35 (total espanhol) - 15 (ambas) = 20</li>
+            <li><strong>Total que fala alguma língua:</strong> 30 (só inglês) + 20 (só espanhol) + 15 (ambas) = 65</li>
+            <li><strong>Nenhum:</strong> 80 (total servidores) - 65 = 15. A afirmação está correta.</li>
+        </ol>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-header">
+        <strong>Questão 2 (CESPE/CEBRASPE):</strong> Se todo servidor do INSS é funcionário público e algum funcionário público é concursado, conclui-se que todo servidor do INSS é concursado.
+      </div>
+      <div class="card-body">
+        <p><span class="badge bg-danger">ERRADO</span></p>
+        <p><strong>Justificativa:</strong> Esta é uma questão de diagramas lógicos (quantificadores). O conjunto "Servidor do INSS" está contido no conjunto "Funcionário Público". O conjunto "Concursado" tem uma interseção com "Funcionário Público". No entanto, nada garante que a interseção ocorra na área dos servidores do INSS. É possível que os funcionários públicos concursados mencionados não sejam servidores do INSS. Portanto, a conclusão não é necessariamente válida.</p>
+      </div>
+    </div>
+  </div>
+  
