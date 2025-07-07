@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Língua Portuguesa – INSS</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Estilo próprio -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <button class="btn btn-outline-light me-3" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-book-open me-2"></i>
+        Apostila Português – INSS
+      </a>
+    </div>
+  </nav>
+
+  <!-- Menu lateral -->
+  <div class="offcanvas offcanvas-start" id="sidebar">
+    <div class="offcanvas-header bg-primary text-white">
+      <h5 class="offcanvas-title">
+        <i class="fas fa-list me-2"></i> Sumário
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body p-0">
+      <nav class="nav-sidebar">
+        <ul class="nav flex-column">
+
+          <!-- item + subtópicos exemplo -->
+          <li class="nav-item">
+            <a class="nav-link active" data-page="apresentacao" href="#"><i class="fas fa-home me-2"></i> 1. Apresentação</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-page="compreensao-interpretacao" href="#"><i class="fas fa-eye me-2"></i> 2. Compreensão e Interpretação</a>
+            <ul class="nav-subtopics">
+              <li><a data-section="conceitos"   href="#">Conceitos Fundamentais</a></li>
+              <li><a data-section="estrategias" href="#">Estratégias Cebraspe</a></li>
+              <li><a data-section="exercicios"  href="#">Exercícios</a></li>
+            </ul>
+          </li>
+
+          <!-- repita a estrutura para os demais tópicos -->
+          <li class="nav-item"><a class="nav-link" data-page="ortografia"        href="#"><i class="fas fa-spell-check me-2"></i> 3. Ortografia Oficial</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="acentuacao"        href="#"><i class="fas fa-text-height me-2"></i> 4. Acentuação Gráfica</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="classes-palavras"  href="#"><i class="fas fa-tags me-2"></i> 5. Classes de Palavras</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="crase"             href="#"><i class="fas fa-tilde me-2"></i> 6. Crase</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="sintaxe"           href="#"><i class="fas fa-sitemap me-2"></i> 7. Sintaxe</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="pontuacao"         href="#"><i class="fas fa-quote-left me-2"></i> 8. Pontuação</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="concordancia"      href="#"><i class="fas fa-link me-2"></i> 9. Concordância</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="regencia"          href="#"><i class="fas fa-arrow-right me-2"></i>10. Regência</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="significacao"      href="#"><i class="fas fa-language me-2"></i>11. Significação</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="redacao-oficial"   href="#"><i class="fas fa-file-alt me-2"></i>12. Redação Oficial</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="exercicios-integrados" href="#"><i class="fas fa-clipboard-check me-2"></i>13. Exercícios Integrados</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Área de conteúdo -->
+  <main class="main-content">
+    <div class="container-fluid">
+      <div id="content-area">
+        <!-- carregado dinamicamente -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Botão voltar topo -->
+  <button id="backToTop" class="btn btn-primary back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Rodapé fixo -->
+  <footer class="footer bg-light border-top text-muted d-flex justify-content-center align-items-center">
+    © 2025 – Apostila Português INSS
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
