@@ -27,8 +27,6 @@
         </div>
       </div>
   
-      <!-- ... (todas as outras questões continuam aqui, exatamente como antes) ... -->
-  
       <!-- Questão 2: Ética -->
       <div class="card mb-3 quiz-question" data-answer="errado">
         <div class="card-header">
@@ -239,6 +237,7 @@
     <!-- Área de Resultados (inicialmente oculta) -->
     <div id="results" class="mt-5" style="display: none;">
         <h2 class="text-center">Seu Desempenho</h2>
+        <!-- Tabela de Resultados -->
         <div class="table-responsive">
             <table class="table table-bordered text-center">
                 <thead class="table-dark">
@@ -260,12 +259,13 @@
             </table>
         </div>
         
-        <!-- Detalhes do gabarito -->
-        <div id="feedback-area" class="mt-4"></div>
-  
-        <div class="d-grid gap-2">
+        <!-- Botão para Refazer -->
+        <div class="d-grid gap-2 mb-4">
             <button id="redo-quiz" class="btn btn-success btn-lg mt-3">Refazer o Teste</button>
         </div>
+  
+        <!-- Detalhes do gabarito -->
+        <div id="feedback-area" class="mt-4"></div>
     </div>
   </div>
   
@@ -278,5 +278,5 @@
   </style>
   
   <!-- Chamada para o arquivo JavaScript externo -->
-  <script src="./js/simulado.js"></script>
+  <script src="../js/simulado.js"></script>
   
